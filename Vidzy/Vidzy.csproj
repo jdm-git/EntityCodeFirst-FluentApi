@@ -50,6 +50,22 @@
   <ItemGroup>
     <Compile Include="Classification.cs" />
     <Compile Include="Genre.cs" />
+    <Compile Include="Migrations\202101122059312_InitialModel.cs" />
+    <Compile Include="Migrations\202101122059312_InitialModel.Designer.cs">
+      <DependentUpon>202101122059312_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101122103115_InsertDataToGenresTable.cs" />
+    <Compile Include="Migrations\202101122103115_InsertDataToGenresTable.Designer.cs">
+      <DependentUpon>202101122103115_InsertDataToGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101122109199_AddClassificationToVideosTable.cs" />
+    <Compile Include="Migrations\202101122109199_AddClassificationToVideosTable.Designer.cs">
+      <DependentUpon>202101122109199_AddClassificationToVideosTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.cs" />
+    <Compile Include="Migrations\202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.Designer.cs">
+      <DependentUpon>202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +75,20 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101122059312_InitialModel.resx">
+      <DependentUpon>202101122059312_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101122103115_InsertDataToGenresTable.resx">
+      <DependentUpon>202101122103115_InsertDataToGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101122109199_AddClassificationToVideosTable.resx">
+      <DependentUpon>202101122109199_AddClassificationToVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.resx">
+      <DependentUpon>202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
