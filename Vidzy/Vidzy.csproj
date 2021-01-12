@@ -66,6 +66,10 @@
     <Compile Include="Migrations\202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.Designer.cs">
       <DependentUpon>202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101122121098_ChangedNameOfGenreId.cs" />
+    <Compile Include="Migrations\202101122121098_ChangedNameOfGenreId.Designer.cs">
+      <DependentUpon>202101122121098_ChangedNameOfGenreId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.resx">
       <DependentUpon>202101122113466_SetNameInVideoTableToNotNullAndMaxLengthTo255.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101122121098_ChangedNameOfGenreId.resx">
+      <DependentUpon>202101122121098_ChangedNameOfGenreId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

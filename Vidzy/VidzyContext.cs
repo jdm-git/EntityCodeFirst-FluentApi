@@ -14,6 +14,11 @@ namespace Vidzy
                 .Property(v => v.Name)
                 .IsRequired()
                 .HasMaxLength(255);
+
+            modelBuilder.Entity<Video>()
+                .HasRequired(v => v.Genre)
+                .WithMany(g => g.Videos)
+                .HasForeignKey(v => v.GenreId);
         }
     }
 }
